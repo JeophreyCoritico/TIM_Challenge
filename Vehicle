@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace ClassChallenge
+{
+    public abstract class Vehicle
+    {
+        string manufacturer;
+        string model;
+        int price;
+
+        public abstract void move();
+    }
+
+    public class Car : Vehicle
+    {
+        public override void move()
+        {
+            Console.WriteLine("SAAAAAANIC");
+        }
+    }
+
+    public class Boat : Vehicle
+    {
+        public override void move()
+        {
+            Console.WriteLine("EGGMAYYNE");
+        }
+    }
+}
